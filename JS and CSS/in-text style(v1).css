@@ -1,0 +1,360 @@
+#page-header > div > div > a > img {
+    border: 0;
+    margin-top: -2px;
+ }
+
+header#page-header::before { 
+    position: absolute;
+    content: '';
+    top: 110px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(271deg,#7c0378,#bf165e,#e47000);
+    clip-path: polygon(0 0, 100% 0, 100% 4%, 0 9%);
+}   
+
+section.page-section-header.page-section-header-home.page-section-header-home-index.has-backdrop-image::after { 
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.125rem 50vw .7rem 50vw;
+    border-color: transparent #FFFF #FFFF transparent;
+    z-index: 3;
+    bottom: -5px;
+}  
+
+.page-section-header-home-index.has-backdrop-image {
+    background-image: url(https://www.cityu.edu.hk/sites/g/files/asqsls3821/files/styles/crop_cityu_headline_1465_532/public/2019-02/C01-084_2_0.jpg?h=b18f6b74&itok=WAM1MEei);
+}
+
+h1.title {
+    font-size: min(max(3.5vw, 18px), 26px);
+ }
+
+h2 { 
+    color: #bf165e;
+    background: linear-gradient(225deg, #bf165e 0%, #bf165e 75%, #7c257c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#sdg_banner > div.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#sdg_banner .sdg_info {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+#sdg_banner ul.sdg_icons {
+    width: 100%;
+    gap: 13px;
+}  
+
+#sdg_banner ul.sdg_icons>li img {
+    width: 110px;
+    height: 110px;
+    border-radius: 5px;
+} 
+
+#page-header > div > div > a > img {
+    margin-top: -2px;
+    width: 90%;
+}
+
+#page-header .primary {
+    padding: 10px 10px 20px 10px;
+    background-color: white !important;
+ }
+
+#page-header .primary ul.header-tools {
+    top: -10px;
+ }
+
+.page-section-header-home-index:not(.improvedLayout) .container .global-search-wrapper:not(.improvedLayout) {
+    width: 100%;
+}
+                                
+.global-search .search-submit button:hover .icon {
+    color: unset;
+ }
+
+ .global-search-wrapper {
+    width: 500px;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.5);
+ }
+
+.global-search {
+    border: 0;
+    background: unset;
+}
+    
+.global-search .field-button-wrapper.field-button-wrapper {
+    display: grid !important;
+    grid-template-columns: 1.5fr 0.1fr;
+    column-gap: 15px;
+}
+
+.global-search .search-field {
+    width: 100%;
+    border-radius: 2px;
+}
+    
+.global-search .search-submit {
+    width: unset;
+}
+
+.global-search .search-submit button {
+    background: #484d47;
+    color: unset;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin: unset;
+}
+
+ul.search-menu {
+    text-align: left;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 0px #c230800d;
+}
+
+.slick-list, .slick-track {
+    height: 250px;
+}
+
+.slick-dots {
+    border: 0px;
+    width: fit-content;
+    text-align: unset;
+    bottom: 5px;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 10px;
+}
+
+/*.slick-dots li button {
+    border: 1px solid #c230800d;
+    background: white; 
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;                                    
+}*/
+
+.slick-dots li button:before {
+    font-size: 35px;
+    color: #981f61 !important;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.slick-slide-container {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slick-slide-container img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.slider-button a {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    background-color: #981f61;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button-container {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 120px);
+    gap: 10px;
+    width: 100%;
+
+}
+
+.btninfo {
+    background: #981f61;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.btninfo > img, .btninfo > div > img {
+    border: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    filter: brightness(0.8);
+}
+
+.btnText {
+    position: relative;
+    bottom: 46px;
+    background: #981f61d4;
+    padding: 5px 0;
+    border-radius: 0 0 5px 5px;
+    font-size: min(max(3.5vw, 10px), 16px);
+    height: 33%;
+    align-content: center;
+}
+
+#main-navigation > ul > li > a > span > span.label, #main-navigation > ul > li > button > span.label {
+    color: #c21975 !important;
+    font-weight: bold;
+}
+
+#main-navigation > ul > li.dropdown-overflow {
+    margin-right: 25px !important;
+}
+
+.button-container > a:visited {
+    color: white !important;
+}
+
+.page-section-home #main-navigation>ul {
+    justify-content: space-between;
+}
+
+.tabs [role="tab"] {
+    height: 20px;
+}
+
+.slick-arrow {
+    display: none !important;
+}
+
+@media screen and (min-width: 720px) {
+    .page-section-content-home-index .secondary nav.content-navigation>ul>li {
+        margin-left: unset !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #page-header > div > div > a > img {
+        width: unset !important;
+    }
+    
+    header#page-header::before {
+        top: 120px;
+    }
+
+    #sdg_banner ul.sdg_icons {
+    width: 100%;
+    gap: 7px;
+    }  
+}
+
+@media screen and (max-width: 1171px) {
+    .slider-button a {
+        bottom: 5px;
+        right: 15px;
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    .container-inner {
+        display: flex !important;
+        flex-direction: column !important;
+        height: unset !important;
+        row-gap: 15px !important;
+    }
+
+    .slick-list, .slick-track {
+        height: fit-content !important;
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+}
+
+ @media screen and (max-width: 480px) {
+    #page-header > div > div > a > img {
+        margin-top: -10px;
+    }
+     
+    header#page-header::before {
+        top: 140px;
+        height: 30vh;
+    } 
+}
+     
+/* prev css re-apply */
+.page-section-content-home-index .secondary nav.content-navigation>ul>li, .page-section-home #main-navigation>ul li:first-child, .page-section-home #main-navigation>ul li:first-child {
+    margin-left: unset !important;
+    padding: 0 15px!important;
+}
+
+.page-section-content-home-index .secondary nav.content-navigation>ul>li .label {
+    font-size: 0.9rem !important;
+}
+
+.page-section-content-home-index .secondary nav.content-navigation>ul>li .icon {
+    font-size: 1.8625rem !important;
+}
+
+.page-section-content-home-index .secondary nav.content-navigation>ul>li .count {
+    font-size: .6rem !important;
+}
+
+.page-section-content-home-index .secondary nav.content-navigation {
+    padding: 20px 0 !important;
+}
+
+.page-section .page-section-header {
+    border-top: 0;
+    border-bottom: 0;
+    box-shadow: unset !important;
+}
+
+section.page-section-header-home-index {
+    max-height: 450px !important;
+    min-height: 230px !important;
+}
+
+section.page-section-header-home-index .container {
+    background: none !important;
+}
