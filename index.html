@@ -653,7 +653,7 @@
                                 position: unset;
                                 margin-bottom: unset !important;
                                 font-size: 1rem;
-                                padding: 10px;
+                                padding: 5px;
                                 margin-top: -6px;
                                 background: #ffffff80;
                                 border-radius: 50px;
@@ -670,7 +670,7 @@
                                 border-radius: 50px;
                                 text-align: center;
                                 align-content: center;
-                                padding: 3px 14px;
+                                padding: 3px 10px;
                                 max-height: 32px;
                             }
                             
@@ -685,13 +685,16 @@
 
                             .page-section-header-home-index.has-backdrop-image {
                                 min-height: 350px !important;
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d4_v2_BG-only_v2.png");
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d4_v3_BG-only-v2.png");
+                                box-shadow: 0 0 15px 0px #f0b9cf;
+                                border-bottom: 0;
+                                border-top: 0;
                             }
 
                             /*Header Layout - Searching Bar*/
                             .page-section-header-home-index:not(.improvedLayout) .container {
                                 position: absolute;
-                                top: 205px;
+                                top: 215px;
                                 background: none !important;
                                 max-width: unset !important;
                                 width: 100%;
@@ -1029,7 +1032,7 @@
                                 }
                                 
                                 .page-section-header-home-index:not(.improvedLayout) .container {
-                                    top: 110px !important;
+                                    top: 115px !important;
                                     max-width: 300px !important;
                                 }
 
@@ -1044,11 +1047,15 @@
                                 #normalSearch {
                                     font-size: 12px;
                                 }
+                                
+                                a[aria-label="Go to advanced search"] {
+                                    font-size: 0.8rem;
+                                }
                             }
 
                             @media screen and (max-width: 480px) {
                                 header {
-                                    background: linear-gradient(180deg, #fdf2f8 25%, #faf0f400) !important;
+                                    background: linear-gradient(180deg, #f5cede 80%, #f5cede75, #f5cede00) !important;
                                 }
 
                                 #page-header .primary {
@@ -1061,13 +1068,14 @@
 
                                 #page-header .primary ul.header-tools {
                                     padding: 4px;
-                                    background: #b4156f;
+                                    background: #b4156f21;
                                     font-size: 0.6rem !important;
                                     position: absolute;
                                     top: 0;
                                     right: 38px;
                                     border-radius: 3px;
                                     margin-top: unset;
+                                    box-shadow: none;
                                 }
 
                                 #page-header .primary ul.header-tools .help-and-faq .label, #page-header .primary ul.header-tools .help-and-faq .icon-lifebuoy {
@@ -1075,7 +1083,7 @@
                                 }
 
                                 #page-header .primary ul.header-tools .help-and-faq a {
-                                    background: transparent;
+                                    background: #b4156f;
                                     padding: 3px 10px;
                                     border-radius: 2px;
                                 }
@@ -1084,45 +1092,43 @@
                                     vertical-align: -3px;
                                 }
 
-                                #page-content {
-                                    top: 8px;
-                                }
-
                                 .btnText {
                                     bottom: 53px;
                                     height: 40%;
                                 }     
                             }
 
-                            @media screen and (max-width: 511px) {
+                            @media screen and (max-width: 495px) {
                                 #page-header .primary ul.header-tools {
                                     font-size: 0.75rem;
                                 }
                             }
 
-                            @media (min-width: 365px) and (max-width: 520px) {
+                            @media (min-width: 430px) and (max-width: 520px) {
                                 .global-search .search-field, #normalSearch {
                                     height: 30px !important;
                                 }
                             }
 
+                            @media (min-width: 365px) and (max-width: 520px) {
+                                #page-content {
+                                    top: -6px;
+                                }
+                            }
+
                             @media only screen and (max-width: 520px) {
                                 .page-section-header-home-index.has-backdrop-image {
-                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d4_v2_BG-only_v2-_300h_.png");
+                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d4_v3_BG-only_300h_-v2.png");
                                     min-height: calc(250px - 3vw) !important;
                                     top: 0;
                                 }
                                 
                                 .page-section-header-home-index:not(.improvedLayout) .container {
-                                    top: 155px;
+                                    top: 165px;
                                 }
 
                                 .global-search-wrapper {
                                     max-width: 385px;
-                                }
-
-                                a[aria-label="Go to advanced search"] {
-                                    font-size: 0.8rem;
                                 }
                             }
                             
