@@ -583,11 +583,10 @@
                         <div class="text-block">
                             <style>
                             /*General Setting*/
-
-                            h1.title {
-                                font-size: min(max(3.5vw, 14px), 16px);
+                            a:visited {
+                                color: #b4156f;
                             }
-
+                            
                             h2 { 
                                 font-size: 1.8rem !important;
                                 font-weight: bold;
@@ -597,7 +596,7 @@
                                 -webkit-text-fill-color: transparent;
                             }
 
-                            .language-dropdown, #page-header .primary  .container:before, .container:after, .global-search-wrapper .header {
+                            h1.title, .language-dropdown, #page-header .primary  .container:before, .container:after, .global-search-wrapper .header {
                                 display: none !important;
                             }
 
@@ -611,8 +610,26 @@
                                 transition: min-height 0.1s ease-in-out;
                             }
 
-                            ul.header-tools:hover, .global-search .search-submit button:hover, .btninfo:hover, #sdg_banner ul.sdg_icons>li button img:hover {
-                                transform: scale(1.05);
+                            ul.header-tools:hover, .sdg-dashboard1:hover, .world-map-concept:hover {
+                                transform: scale(0.95);
+                            }
+                            
+                            .sdg-dashboard2:hover {
+                                transform: scale(0.98);
+                            }
+
+                            .global-search .search-submit button .icon:hover {
+                                transform: scale(0.9);
+                            }
+
+                            .btninfo:hover, #sdg_banner ul.sdg_icons>li button img:hover {
+                                transform: translateY(-4px);
+                                transition: transform 0.1s ease-in-out;
+                            }
+
+                            .sdg-dashboard2:hover .sdg-hidden-text {
+                                bottom: 0;
+                                transition: bottom 0.3s ease-in-out;
                             }
 
                             /*Header Layout*/
@@ -640,6 +657,26 @@
                                 padding: 0 25px;
                             }
 
+                            /*                            
+                            #page-header .primary .logo {
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_transparent_BG.png");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                margin-right: 0;
+                                max-height: 88px;
+                                width: auto;
+                                margin-top: -9px;
+                                margin-left: -8px;
+                                max-width: unset;
+                            }
+
+                            #page-header .primary .logo img {
+                                visibility: hidden;
+                                height: 88px !important;
+                                max-width: 288px;
+                            }
+                            */
+
                             #page-header .primary .logo img {
                                 max-height: 88px;
                                 width: auto;
@@ -653,11 +690,10 @@
                                 position: unset;
                                 margin-bottom: unset !important;
                                 font-size: 1rem;
-                                padding: 5px;
                                 margin-top: -6px;
-                                background: #ffffff80;
                                 border-radius: 50px;
                                 box-shadow: 0 0 5px 1px #ffffff4a !important;
+                                transition: transform 0.1s ease-in-out;
                             }
                             
                             #page-header .primary ul.header-tools .help-and-faq {
@@ -674,7 +710,12 @@
                                 max-height: 32px;
                             }
                             
-                            #page-header .primary ul.header-tools .help-and-faq .label, a[aria-label="Go to advanced search"], a[aria-label="Go to advanced search"]:visited {
+                            #page-header .primary ul.header-tools {
+                                color: #b4156f !important;
+                                font-weight: bold;
+                            }
+
+                            .help-and-faq .label, a[aria-label="Go to advanced search"], a[aria-label="Go to advanced search"]:visited {
                                 color: #b4156f !important;
                             }
 
@@ -709,7 +750,7 @@
                                 display: flex;
                                 align-items: flex-start;
                                 flex-direction: column;
-                                row-gap: 2px;
+                                row-gap: 5px;
                             }    
 
                             #main-search {
@@ -764,6 +805,10 @@
 
                             #normalSearch:hover .icon {
                                 color: white !important;
+                            }
+                            
+                            #normalSearch .icon {
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             ul.search-menu {
@@ -834,6 +879,7 @@
 
                             .page-section .welcome {
                                 margin-top: 0;
+                                margin-bottom: -25px;
                             }
 
                             .container-inner {
@@ -930,6 +976,7 @@
                                 text-align: center;
                                 align-content: center;
                                 color: white;
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             .btninfo > img, .btninfo > div > img {
@@ -957,6 +1004,64 @@
                             }
 
                             /*Substainable Development Layout*/
+                            .sdg_custom_sec {
+                                display: flex;
+                                margin-top: 50px;
+                                column-gap: 10px;
+                                align-items: center;
+                            }
+
+                            .sdg_title {
+                                margin-bottom: 0;
+                            }
+
+                            .sdg-dashboard1 {
+                                display: flex;
+                                align-items: center;
+                                background: #fff;
+                                font-size: 1.1rem;
+                                font-weight: bold;
+                                color: #b4156f;
+                                padding: 5px 10px;
+                                border-radius: 50px;
+                                height: fit-content;
+                                box-shadow: 2px 2px 8px 0px #c230800d;  
+                                transition: transform 0.1s ease-in-out;                              
+                            } 
+
+                            .sdg-dashboard1 img {
+                                max-width: 25px;
+                                padding: 0 5px 0 0;
+                            }
+
+                            .sdg-dashboard2 {
+                                position: relative;
+                                display: flex;
+                                border-radius: 5px;
+                                box-shadow: 2px 2px 8px 0px #c230800d;
+                                overflow: hidden;
+                                margin-top: 20px;
+                            }
+
+                            .sdg-dashboard2 img.sdg-desktop {
+                                padding: 15px 0;
+                                transition: padding 0.3s ease-in-out;
+                            }
+
+                            img.sdg-mobile {
+                                display: none;
+                            }
+
+                            .sdg-hidden-text {
+                                position: absolute;
+                                background: #009fde;
+                                color: #fff;
+                                padding: 5px 10px 5px 21px;
+                                border-radius: 25px 0 5px;
+                                right: 0;
+                                bottom: -50px;
+                                transition: bottom 0.3s ease-in-out;
+                            }
 
                             #sdg_banner .container {
                                 display: flex;
@@ -983,6 +1088,7 @@
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 5px;
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             /*Map Layout*/
@@ -995,7 +1101,7 @@
                             }
 
                             span.concept-wrapper, .dropdown-container {
-                                box-shadow: 2px 2px 8px 0px #c230800d !important;
+                                box-shadow: 0 0 10px 0px #c230800d !important;
                                 padding: 10px !important;
                                 border-radius: 5px !important;
                             }
@@ -1003,6 +1109,11 @@
                             .dropdown-container>ul li, .dropdown-container {
                                 border-bottom: unset !important;
                                 border: unset !important;
+                            }
+
+                            .concept-badge-large {
+                                border: 0;
+                                box-shadow: none;
                             }
 
                             foreignObject.collaboration-map-home-icon {
@@ -1019,6 +1130,12 @@
                             @media screen and (min-width: 720px) {
                                 .page-section-content-home-index .secondary nav.content-navigation>ul>li {
                                     margin-left: unset !important;
+                                }
+                            }
+
+                            @media (min-width: 365px) and (max-width: 520px) {
+                                #page-content {
+                                    top: -6px;
                                 }
                             }
 
@@ -1050,6 +1167,14 @@
                                 
                                 a[aria-label="Go to advanced search"] {
                                     font-size: 0.8rem;
+                                }
+
+                                img.sdg-mobile {
+                                    display: flex;
+                                }
+
+                                .sdg-dashboard2 img.sdg-desktop{
+                                    display: none;
                                 }
                             }
 
@@ -1110,12 +1235,6 @@
                                 }
                             }
 
-                            @media (min-width: 365px) and (max-width: 520px) {
-                                #page-content {
-                                    top: -6px;
-                                }
-                            }
-
                             @media only screen and (max-width: 520px) {
                                 .page-section-header-home-index.has-backdrop-image {
                                     background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d4_v3_BG-only_300h_-v2.png");
@@ -1129,9 +1248,18 @@
 
                                 .global-search-wrapper {
                                     max-width: 385px;
+                                    row-gap: 2px;
                                 }
                             }
-                            
+                
+                            @media only screen and (max-width: 654px) {
+                                .sdg_custom_sec {
+                                    flex-direction: column;
+                                    row-gap: 10px;
+                                    align-items: flex-start;
+                                }
+                            }
+
                             @media (min-width: 481px) and (max-width: 945px) {
                                 .btnText {
                                     bottom: 54px;
@@ -1170,7 +1298,21 @@
 
                                 .button-container {
                                     grid-template-rows: repeat(2, 120px);
-                                }                
+                                }
+                                
+                                .sdg-dashboard2:hover img.sdg-desktop  {
+                                    padding: 0 0 30px 0;
+                                    transition: padding 0.3s ease-in-out;
+                                }
+
+                                .sdg-hidden-text {
+                                    padding: 5px 10px;
+                                    border-radius: 50px 50px 5px  5px;
+                                    left: 0;
+                                    text-align: center;
+                                    bottom: -50px;
+                                    transition: bottom 0.3s ease-in-out;
+                                }
                             }
                             </style>
 
@@ -1213,8 +1355,20 @@
                                     		<div class="btnText">Overarching Research Themes<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; padding-left: 8px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path></svg></div>
                                 	    </a>
                                 </div>
+                            </div>
+                            <div class="sdg_custom_sec">
+                            <h2 class="sdg_title">UN Sustainable Development Goals</h2>
+                            <a class="sdg-dashboard1" href="https://app.powerbi.com/view?r=eyJrIjoiMDNmZmYwYmEtNmFjMC00MzMxLTk1NTUtYmQ1Y2Y2Y2VkZGQ2IiwidCI6IjgzZWVmMGZmLTY1ZWYtNDg3MC04OWRjLWUxYjljOGU0MzU2ZiIsImMiOjEwfQ%3D%3D" target="_blank"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/SDG_Wheel_Transparent_WEB_1_.png">SDG Dashboard</a>
+                            </div>
+                            <div class="sdg_btn">
+                                <a class="sdg-dashboard2" href="https://app.powerbi.com/view?r=eyJrIjoiMDNmZmYwYmEtNmFjMC00MzMxLTk1NTUtYmQ1Y2Y2Y2VkZGQ2IiwidCI6IjgzZWVmMGZmLTY1ZWYtNDg3MC04OWRjLWUxYjljOGU0MzU2ZiIsImMiOjEwfQ%3D%3D" target="_blank">
+                                    <img class="sdg-desktop" src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/sdg-dashboard-transparent.png" width="100%">
+                                    <img class="sdg-mobile" src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/sdg-dashboard-transparent-mobile.png" width="100%">
+                                    <span class="sdg-hidden-text">View 2020 -2025 SDG Publications</span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </div>    
             </section>
         
 
@@ -1228,11 +1382,6 @@
 <section id="sdg_banner" class="page-section sdg_banner">
     <div class="container">
         <div class="sdg_info">
-            <h2>
-                UN Sustainable Development Goals
-            </h2>
-
-            <p>In September 2015, 193 countries agreed to adopt a set of global goals to end poverty, protect the planet and ensure prosperity for all. Click on a goal to the right to explore how our researchers and their work are contributing towards achieving it. </p>
         </div>
         <ul class="sdg_icons" role="menubar">
             
